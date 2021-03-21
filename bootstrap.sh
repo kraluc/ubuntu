@@ -5,7 +5,6 @@ export DEBIAN_FRONTEND=noninteractiv
 apt-get update
 # Upgrade Packages
 apt-get upgrade
-do-release-upgrade
 
 # Basic Linux Stuff
 sudo apt-get install -y git systemd
@@ -49,3 +48,9 @@ sudo systemctl restart apache2
 
 # Clean
 sudo apt-get autoclean
+
+# release upgrade
+sudo apt -y update
+sudo apt -y upgrade
+# silent upgrade https://askubuntu.com/questions/250733/can-i-do-a-silent-or-unattended-release-upgrade
+sudo do-release-upgrade -p -f DistUpgradeViewNonInteractive
