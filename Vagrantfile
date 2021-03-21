@@ -1,3 +1,6 @@
+# Vagrant crash course:
+# https://www.youtube.com/watch?v=vBreXjkizgo
+
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 

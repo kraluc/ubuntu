@@ -22,6 +22,7 @@ a2enmod rewrite
 sudo add-apt-repository -y ppa:ondrej/php-qa
 sudo add-apt-repository -y ppa:ondrej/php
 sudo apt-get update
+sudo apt-get upgrade
 
 # Install PHP as an apache module
 sudo apt-get install -y php8.0-common php8.0-cli
@@ -30,8 +31,8 @@ sudo apt-get install -y php8.0-common php8.0-cli
 sudo systemctl restart apache2
 
 # PHP Extensions
-sudo apt install php8.0-{bz2,curl,intl,mysql,readline,xml,pcov,xdebug}
-sudo apt install libapache2-mod-php8.0
+sudo apt install -y php8.0-{bz2,curl,intl,mysql,readline,xml,pcov,xdebug}
+sudo apt install -y libapache2-mod-php8.0
 
 # Activate the change by restarting apache
 sudo systemctl restart apache2
