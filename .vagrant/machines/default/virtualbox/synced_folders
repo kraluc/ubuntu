@@ -1,1 +1,1 @@
-{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/Users/vincentricci/Documents/Development/Vagrant/ubuntu","disabled":false,"__vagrantfile":true}}}
+{"nfs":{"/var/www/html":{"type":"nfs","guestpath":"/var/www/html","hostpath":"/System/Volumes/Data/Users/vincentricci/Documents/Development/Vagrant/ubuntu","disabled":false,"__vagrantfile":true,"map_uid":501,"map_gid":80,"nfs_version":3,"nfs_udp":true,"uuid":"1142796575"}}}
