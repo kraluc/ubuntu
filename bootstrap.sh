@@ -43,14 +43,14 @@ debconf-set-selections <<< 'mysql-server mysql-server/root_password_again passwo
 # Install MySQL
 sudo apt-get install -y mysql-server
 
-# Restart Apache
-sudo systemctl restart apache2
-
-# Clean
-sudo apt-get autoclean
-
 # release upgrade
 sudo apt -y update
 sudo apt -y upgrade
 # silent upgrade https://askubuntu.com/questions/250733/can-i-do-a-silent-or-unattended-release-upgrade
 #sudo do-release-upgrade -p -f DistUpgradeViewNonInteractive
+
+# Restart Apache
+sudo systemctl restart apache2
+
+# Clean
+sudo apt-get autoclean
