@@ -18,8 +18,8 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.33.10"
   # config.vm.network "public_network"
 
-  # Folder Settings
-  # config.vm.synced_folder "../data", "/vagrant_data"
+  # Folder Settings  1st is your host folder  2nd is the guest folder
+  config.vm.synced_folder ".", "/var/www/html", :nfs => { :mount_options => ["dmode=777", "fmode=666"] }
 
   # Provision Settings
   # config.vm.provision "shell", inline: <<-SHELL

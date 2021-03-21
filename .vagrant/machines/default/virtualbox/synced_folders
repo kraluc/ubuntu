@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/vincentricci/Documents/Development/Vagrant/ubuntu","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/var/www/html":{"guestpath":"/var/www/html","hostpath":"/Users/vincentricci/Documents/Development/Vagrant/ubuntu","disabled":false,"__vagrantfile":true}}}
