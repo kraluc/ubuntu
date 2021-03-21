@@ -5,6 +5,7 @@ export DEBIAN_FRONTEND=noninteractiv
 apt-get update
 # Upgrade Packages
 apt-get upgrade
+do-release-upgrade
 
 # Basic Linux Stuff
 sudo apt-get install -y git systemd
@@ -31,7 +32,7 @@ sudo systemctl restart apache2
 
 # PHP Extensions
 sudo apt install php8.0-{bz2,curl,intl,mysql,readline,xml,pcov,xdebug}
-sudo apt install php8.0-pfm libapache2-mod-php8.0
+sudo apt install libapache2-mod-php8.0
 
 # Activate the change by restarting apache
 sudo systemctl restart apache2
