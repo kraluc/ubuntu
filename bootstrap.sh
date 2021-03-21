@@ -50,7 +50,7 @@ sudo systemctl restart apache2
 sudo apt-get autoclean
 
 # release upgrade
-sudo apt -y update
-sudo apt -y upgrade
+#sudo apt -y update
+#sudo apt -y upgrade
 # silent upgrade https://askubuntu.com/questions/250733/can-i-do-a-silent-or-unattended-release-upgrade
-sudo do-release-upgrade -p -f DistUpgradeViewNonInteractive
+#sudo do-release-upgrade -p -f DistUpgradeViewNonInteractive
